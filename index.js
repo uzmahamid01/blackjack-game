@@ -14,7 +14,7 @@ let player = {
 }
 
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = playerName + ": $" + playerChips
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -64,3 +64,68 @@ function newCard() {
         renderGame()        
     }
 }
+
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one array
+// Log out at least two of the keys using the dot notation
+// let castle = {
+//     hasSwimmingPool: true,
+//     address: "123 Main St",
+//     price: 100000,
+//     amenities: ["pool", "gym", "tennis court"]
+// }
+
+// console.log(castle.amenities)
+
+// Create a person object that contains three keys: name, age, and county.
+// Use yourself as an example to set the values for name, age, and country
+
+// Create a function, logData(), that uses the person object to create a
+// string in the following format: 
+// "Per is 35 years old and lives in Norway"
+
+// Call the logData() function to verify that it works
+let person = {
+    name: "Uzma",
+    age: 22,
+    country: "US"
+}
+function logData() {
+    let data = `${person.name} is ${person.age} years old and lives in ${person.country}`
+    // console.log(data)
+}
+
+logData()
+
+// let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+// for (let i =0; i < largeCountries.length; i++) {
+//     console.log("- " + largeCountries[i])
+// }
+
+// let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+// largeCountries.shift()
+// largeCountries.pop()
+// console.log(largeCountries)
+// largeCountries.push("Pakistan")
+// console.log(largeCountries)
+// largeCountries.unshift("China")
+// console.log(largeCountries)
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+if (dayOfMonth && weekday) {
+    console.log("Scary")
+}
+
+
+
